@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-ftp</name>
     <description>demo-ftp</description>
-    <url/>
+    <url>https://github.com/hhiep00/ftp</url>
     <licenses>
         <license/>
     </licenses>
@@ -21,10 +21,10 @@
         <developer/>
     </developers>
     <scm>
-        <connection/>
-        <developerConnection/>
+        <url>https://github.com/hhiep00/ftp</url>
+        <connection>scm:git:git://github.com/hhiep00/ftp.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:hhiep00/ftp.git</developerConnection>
         <tag/>
-        <url/>
     </scm>
     <properties>
         <java.version>8</java.version>
@@ -55,12 +55,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
     <build>
         <plugins>
             <plugin>
