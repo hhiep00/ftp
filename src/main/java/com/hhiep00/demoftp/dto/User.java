@@ -1,4 +1,4 @@
-package com.example.demoftp.dto;
+package com.hhiep00.demoftp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

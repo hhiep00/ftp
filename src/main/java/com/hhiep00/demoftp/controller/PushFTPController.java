@@ -1,4 +1,4 @@
-package com.example.demoftp.controller;
+package com.hhiep00.demoftp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
