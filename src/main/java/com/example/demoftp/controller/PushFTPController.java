@@ -21,18 +21,19 @@ import java.util.Arrays;
 @RequestMapping("/ftp")
 public class PushFTPController {
 
-    @Autowired
-    private MessageChannel ftpUploadChannel;
+//    @Autowired
+//    private MessageChannel ftpUploadChannel;
 
     @PostMapping
     public ResponseEntity<?> pushMessage(@RequestParam("file") MultipartFile file) throws IOException {
-        File file1 = new File("D:\\Users\\vsd\\ftp\\Send\\demo_send");
-        try (OutputStream outStream = new FileOutputStream(file1)) {
-            outStream.write(file.getBytes());
-        }
-        ftpUploadChannel.send(MessageBuilder.withPayload(file1)
-                        .setHeader("remote-directory", "/Send")
-                .build());
-        return ResponseEntity.noContent().build();
+        return null;
+//        File file1 = new File("D:\\Users\\vsd\\ftp\\Send\\demo_send");
+//        try (OutputStream outStream = new FileOutputStream(file1)) {
+//            outStream.write(file.getBytes());
+//        }
+//        ftpUploadChannel.send(MessageBuilder.withPayload(file1)
+//                        .setHeader("remote-directory", "/Send")
+//                .build());
+//        return ResponseEntity.noContent().build();
     }
 }
